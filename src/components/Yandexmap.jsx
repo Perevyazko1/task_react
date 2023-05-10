@@ -5,11 +5,13 @@ import {usePosition} from "../usePosition";
 
 const Yandexmap = () => {
         const { latitude, longitude, error } = usePosition();
+        console.log(latitude)
     return (
   <YMaps>
-    <div>
+    <div className={"map"}>
         {error}
-      <Map defaultState={{ center: [`${latitude}`,`${longitude}`], zoom: 12 }} />
+        <h2>Your geolocation</h2>
+      <Map width="100%" defaultState={{ center: [latitude,longitude], zoom: 12 }} />
     </div>
   </YMaps>
     );
