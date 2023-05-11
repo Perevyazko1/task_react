@@ -1,6 +1,7 @@
 import React from 'react';
-import Yandexmap from "./components/Yandexmap";
+
 import Weather from "./components/Weather";
+import YandexMap from "./components/Yandexmap";
 
 
 
@@ -10,7 +11,8 @@ function App() {
 
     <div className="App">
       <Weather/>
-      <Yandexmap/>
+      <YandexMap/>
+        {/*<Map location={undefined}/>*/}
     </div>
   );
 }
